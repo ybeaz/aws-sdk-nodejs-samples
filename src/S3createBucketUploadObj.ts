@@ -5,15 +5,15 @@ import { v4 as uuidv4 } from 'uuid'
 import { getUploadedObjS3Bucket } from './utils/getUploadedObjS3Bucket'
 import { getCreatedS3Bucket } from './utils/getCreatedS3Bucket'
 
-AWS.config.credentials = new AWS.SharedIniFileCredentials({
-  profile: 'work-account',
-})
-
 /**
  * @Description AWS SDK script to create a text file and upload it on S3 AWS service
  * @Link To check a result on AWS https://console.aws.amazon.com/s3/
  * @Link (Sourse) https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-started-nodejs.html#getting-started-nodejs-install-sdk
  */
+
+AWS.config.credentials = new AWS.SharedIniFileCredentials({
+  profile: 'work-account',
+})
 
 // Create unique bucket name
 const bucketName = 'node-sdk-sample-' + uuidv4()
