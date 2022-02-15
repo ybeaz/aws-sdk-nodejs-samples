@@ -43,6 +43,7 @@ Create an application through CDK that deploys the following resources:
 - [AWS VPC Experience](https://console.aws.amazon.com/vpc)
 - [AWS IAM console](https://console.aws.amazon.com/iamv2)
 
-### Finding and edit global credentials
+### Finding and edit credentials
 
-Path `~/.aws/credentials`
+Global credentials, path `~/.aws/credentials`
+Local credentials, path `./config.json`
