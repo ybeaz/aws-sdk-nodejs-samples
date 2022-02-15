@@ -4,14 +4,14 @@ import { getDelayedCode } from './utils/getDelayedCode'
 import { getDeletedS3Object } from './utils/getDeletedS3Object'
 import { getDeletedS3EmptuBuckets } from './utils/getDeletedS3EmptuBuckets'
 
+AWS.config.credentials = new AWS.SharedIniFileCredentials({
+  profile: 'work-account',
+})
+
 /**
  * @description Script for bulk deletion of S3 Buckets by the static list of bucket names
  * @link AWS reference https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html
  */
-
-AWS.config.credentials = new AWS.SharedIniFileCredentials({
-  profile: 'work-account',
-})
 
 const buckets: string[] = [
   'node-sdk-sample-1c830a67-ddf5-4748-8731-ab499ab28e94',
