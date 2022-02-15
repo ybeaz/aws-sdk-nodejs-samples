@@ -71,5 +71,5 @@ Create an application through CDK that deploys the following resources:
 
 ### Finding and edit credentials
 
-Global credentials, path `~/.aws/credentials`
-Local credentials, path `./config.json`
+- Global credentials, path `~/.aws/credentials`
+- Local credentials, path `./config.json`
