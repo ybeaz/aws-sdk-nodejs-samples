@@ -8,5 +8,3 @@ exports.handler = async (event, context, callback) => {
 
   context.succeed()
 }
-
-// zip function.zip index123.js

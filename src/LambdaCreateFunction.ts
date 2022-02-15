@@ -12,7 +12,8 @@ import { getCreatedLambdaFunction } from './utils/getCreatedLambdaFunction'
 // Loading credentials and region settings
 AWS.config.loadFromPath('./config.json')
 
-const lambdaFuncName = 'lambda-003'
+const lambdaFuncName = 'lambda-html-001'
+const apiFunctionName = 'hello-world-html'
 
 const file = fs.readFileSync(`dist/src/lambda/${lambdaFuncName}.zip`)
 
@@ -26,7 +27,7 @@ const params = {
     // S3ObjectVersion: 'STRING_VALUE',
     ZipFile: Buffer.from(file), // Buffer.from('./lambda-003.zip'), // || 'STRING_VALUE' /* Strings will be Base-64 encoded on your behalf */
   },
-  FunctionName: `${lambdaFuncName}-${uuidv4()}` /* required */,
+  FunctionName: `${apiFunctionName}` /* required */,
   Role: 'arn:aws:iam::465969086547:role/service-role/role-test-002' /* required */,
   Architectures: [
     'x86_64',
