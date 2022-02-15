@@ -10,7 +10,7 @@
    - CLI run `yarn build`
    - Change `lambdaFuncName` in `./src/LmbCreateFunction.ts`
    - CLI run `npx ts-node ./src/LmbCreateFunction.ts`
-   - Example HTML url `https://2q53ajitdi.execute-api.us-east-1.amazonaws.com/lambda-003-37f95971-01a9-4bb4-b64a-de3ad828393d`
+   - [Example url with Hello World](https://2q53ajitdi.execute-api.us-east-1.amazonaws.com/lambda-003-37f95971-01a9-4bb4-b64a-de3ad828393d)
 
 ### References
 
