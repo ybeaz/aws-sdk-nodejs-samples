@@ -1,0 +1,12 @@
+.vscode/
+.env
+ormconfig.json
+dist/
+node_modules/
+build/
+temp/
+tmp/**/*
+!tmp/uploads/.gitkeep
+coverage/
+assets/appBrowser/bundle.min.js
+assets/appBrowser/bundle.min.js.map

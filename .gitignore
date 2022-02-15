@@ -1,0 +1,32 @@
+# sensitive data
+# .env.production
+
+# compiled output
+/dist
+/node_modules
+
+
+# installation lock
+yarn.lock
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+
+
+# IDEs and editors
+
+
+# IDE - VSCode
+
+
+# Assets
