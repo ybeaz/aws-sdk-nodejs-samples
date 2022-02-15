@@ -1,10 +1,11 @@
-## AWS SDK sample codes
+## AWS SDK sample scripts
 
 ### Scripts that are using AWS JS SDK
 
-1. Create S3 Bucket, working example `npx ts-node ./src/S3createBucketUploadObj.ts`
-2. Delete S3 Buckets in bulk mode `npx ts-node ./src/S3DeleteObjectCommand.ts`
-3. Create Lambda function, working example
+1. Check global credentials `npx ts-node checkCredentials.ts`
+2. Create S3 Bucket `npx ts-node ./src/S3createBucketUploadObj.ts`
+3. Delete S3 Buckets in bulk mode `npx ts-node ./src/S3DeleteObjectCommand.ts`
+4. Create a Lambda function
    - Create lambda function file name and add function itself in `src/lambda/`
    - CLI run `yarn build`
    - Change `lambdaFuncName` in `./src/LmbCreateFunction.ts`
@@ -13,15 +14,11 @@
 
 ### References
 
-- AWS SDK API `https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/`
-- AWS S3 console `https://console.aws.amazon.com/s3/`
-- AWS Lambda console `https://console.aws.amazon.com/lambda`
-- AWS IAM console `https://console.aws.amazon.com/iamv2`
+- [AWS SDK API](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/)
+- [AWS S3 console](https://console.aws.amazon.com/s3/)
+- [AWS Lambda console](https://console.aws.amazon.com/lambda)
+- [AWS IAM console](https://console.aws.amazon.com/iamv2)
 
-### Check credentialss
+### Finding and edit global credentials
 
-npx ts-node checkCredentials.ts
-
-### Find and edit credentials
-
-~/.aws/credentials
+Path `~/.aws/credentials`
