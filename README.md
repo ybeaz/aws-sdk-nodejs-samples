@@ -17,7 +17,7 @@ Create an application through CDK that deploys the following resources:
    - Done: Impemented SDK role in script [./src/LambdaCreateFunction.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/checkCredentials.ts)
 5. Function to create S3 Bucket [./src/S3CreateBucketUploadObj.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/S3CreateBucketUploadObj.ts)
 6. Function to delete S3 Buckets in bulk mode [./src/S3DeleteObjectCommand.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/S3DeleteObjectCommand.ts)
-7. [Tools](https://github.com/ybeaz/aws-node-samples/tree/B-002/tools) and [utilities](https://github.com/ybeaz/aws-node-samples/tree/B-002/src/utils) providing the scalable approach and possibility to maintain the repository
+7. [Tools](https://github.com/ybeaz/aws-node-samples/tree/B-002/tools) and [utilities](https://github.com/ybeaz/aws-node-samples/tree/B-002/src/utils) that provide a scalable approach and the ability to maintain the repository
 
 ### To run CLI scripts that are using AWS JS SDK
 
