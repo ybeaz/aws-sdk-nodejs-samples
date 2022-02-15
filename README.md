@@ -15,8 +15,13 @@ Create an application through CDK that deploys the following resources:
      - To test [link authetication page](https://hello-world-test-001.auth.us-east-1.amazoncognito.com/login?client_id=5v44sg5kdo7ubgjmvaiep75a10&response_type=code&scope=email+openid&redirect_uri=https://hello-world-test-001.auth.us-east-1.amazoncognito.com/)
 4. Relevant IAM permissions
    - Done: Impemented SDK role in script [./src/LambdaCreateFunction.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/checkCredentials.ts)
-5. Function to create S3 Bucket [./src/S3CreateBucketUploadObj.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/S3CreateBucketUploadObj.ts)
-6. Function to delete S3 Buckets in bulk mode [./src/S3DeleteObjectCommand.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/S3DeleteObjectCommand.ts)
+
+**Extra**
+
+5. Function to create S3 Bucket
+   - Done: script link [./src/S3CreateBucketUploadObj.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/S3CreateBucketUploadObj.ts)
+6. Function to delete S3 Buckets in bulk mode
+   - Done: script link [./src/S3DeleteObjectCommand.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/S3DeleteObjectCommand.ts)
 7. [Tools](https://github.com/ybeaz/aws-node-samples/tree/B-002/tools) and [utilities](https://github.com/ybeaz/aws-node-samples/tree/B-002/src/utils) that provide a scalable approach and the ability to maintain the repository
 
 ### To run scripts in CLI using AWS JS SDK
