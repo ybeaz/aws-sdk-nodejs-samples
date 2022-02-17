@@ -41,13 +41,16 @@ Create an application through CDK that deploys the following resources:
 ### References
 
 - [AWS SDK API](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/)
+- [AWS SDK aws-samples > aws-cdk-examples > Typescript](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript)
+
+### Links to AWS console related sections
+
 - [AWS Cognito identity](https://console.aws.amazon.com/cognito)
 - [AWS S3 console](https://console.aws.amazon.com/s3/)
 - [AWS Lambda console](https://console.aws.amazon.com/lambda)
 - [AWS API Gateway](https://console.aws.amazon.com/apigateway)
 - [AWS VPC Experience](https://console.aws.amazon.com/vpc)
 - [AWS IAM console](https://console.aws.amazon.com/iamv2)
-- [AWS SDK aws-samples > aws-cdk-examples > Typescript](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript)
 
 ### REST API authetication workflow
 
