@@ -14,7 +14,7 @@ Create an application through CDK that deploys the following resources:
    - Done:
      - To test [link authetication page](https://hello-world-test-001.auth.us-east-1.amazoncognito.com/login?client_id=5v44sg5kdo7ubgjmvaiep75a10&response_type=code&scope=email+openid&redirect_uri=https://hello-world-test-001.auth.us-east-1.amazoncognito.com/)
 4. Relevant IAM permissions
-   - Done: Impemented SDK role in script [./src/LambdaCreateFunction.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/checkCredentials.ts)
+   - Done: Impemented SDK role in script via params.Role [./src/LambdaCreateFunction.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/LambdaCreateFunction.ts)
 
 **Extra**
 
