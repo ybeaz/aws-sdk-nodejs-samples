@@ -47,6 +47,7 @@ Create an application through CDK that deploys the following resources:
 - [AWS API Gateway](https://console.aws.amazon.com/apigateway)
 - [AWS VPC Experience](https://console.aws.amazon.com/vpc)
 - [AWS IAM console](https://console.aws.amazon.com/iamv2)
+- [AWS SDK aws-samples > aws-cdk-examples > Typescript](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript)
 
 ### REST API authetication workflow
 
