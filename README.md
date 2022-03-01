@@ -16,17 +16,32 @@ Create an application through CDK that deploys the following resources:
 4. Relevant IAM permissions
    - Done: Impemented SDK role in script via params.Role [./src/LambdaCreateFunction.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/LambdaCreateFunction.ts)
 
-**Extra**
+<br />
 
-5. Function to create S3 Bucket
+### How to
+
+1. Create S3 Bucket with SDK function
    - Done: script link [./src/S3CreateBucketUploadObj.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/S3CreateBucketUploadObj.ts)
-6. Function to delete S3 Buckets in bulk mode
+2. Delete S3 Buckets in bulk mode with SDK function
    - Done: script link [./src/S3DeleteObjectCommand.ts](https://github.com/ybeaz/aws-node-samples/blob/B-002/src/S3DeleteObjectCommand.ts)
-7. Lambda function for HTTP GET output
+3. Find API endpoint URL:
+   - From console 1st method\
+      => Go to [AWS API Gateway](https://console.aws.amazon.com/apigateway)\
+      => Go to Stages\
+      => Select a stage\
+      => Look at "Invoke URL ..."
+   - From console 2st method\
+      => Go to [AWS Lambda console](https://console.aws.amazon.com/lambda)\
+      => Select Lambda function
+     => Go to Configuration\
+      => Loot at "Trigger"
+4. Lambda function for HTTP GET output
    - [Example, HTTP GET Hello World](https://2q53ajitdi.execute-api.us-east-1.amazonaws.com/hello-world-html)
-8. [Tools](https://github.com/ybeaz/aws-node-samples/tree/B-002/tools) and [utilities](https://github.com/ybeaz/aws-node-samples/tree/B-002/src/utils) that provide a scalable approach and the ability to maintain the repository
+5. [Tools](https://github.com/ybeaz/aws-node-samples/tree/B-002/tools) and [utilities](https://github.com/ybeaz/aws-node-samples/tree/B-002/src/utils) that provide a scalable approach and the ability to maintain the repository
 
-### To run scripts in CLI using AWS JS SDK
+<br />
+
+### How to run scripts in CLI using AWS JS SDK
 
 1. Check global credentials `npx ts-node ./src/checkCredentials.ts`
 2. Create S3 Bucket `npx ts-node ./src/S3CreateBucketUploadObj.ts`
@@ -38,10 +53,14 @@ Create an application through CDK that deploys the following resources:
    - CLI run `npx ts-node ./src/LmbCreateFunction.ts`
 5. Create Cognito identity pool `npx ts-node ./src/CognitoCreateIdentityPool.ts`
 
+<br />
+
 ### References
 
 - [AWS SDK API](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/)
 - [AWS SDK aws-samples > aws-cdk-examples > Typescript](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript)
+
+<br />
 
 ### Links to AWS console related sections
 
@@ -51,6 +70,8 @@ Create an application through CDK that deploys the following resources:
 - [AWS API Gateway](https://console.aws.amazon.com/apigateway)
 - [AWS VPC Experience](https://console.aws.amazon.com/vpc)
 - [AWS IAM console](https://console.aws.amazon.com/iamv2)
+
+<br />
 
 ### REST API authetication workflow
 
@@ -72,6 +93,7 @@ Create an application through CDK that deploys the following resources:
     --header 'Content-Type: application/x-www-form-urlencoded' \
     --header 'Authorization: eyJraWQiOiJlaHpDVDlrQXUzNzZQbG10WTErQkk1djhQd1o0YlwvNGZUZU9HYzh5N2xDbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiTmd0WEtPUVBiUzhfSUJuLTdtS1pDdyIsInN1YiI6ImQ4NmRkMTU0LTQ5ZDMtNDdkZS04MmRmLTg1NWI3NTc4OWVkNiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9VYjFKUE5hNlQiLCJjb2duaXRvOnVzZXJuYW1lIjoiYWxleC0wMDMiLCJvcmlnaW5fanRpIjoiYWQ4YzY0ZmUtMzFlZC00OTE2LTg4NGYtOTkyNGFmMDI5ZDU5IiwiYXVkIjoiNXY0NHNnNWtkbzd1YmdqbXZhaWVwNzVhMTAiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY0NDk2MzUxNCwiZXhwIjoxNjQ0OTY3MTE0LCJpYXQiOjE2NDQ5NjM1MTQsImp0aSI6ImUyMWRkZTIwLWVlMGQtNGZlNC1iZDE5LTUzZDFhMjA0NmQ1ZiIsImVtYWlsIjoidDM1MzEzNTBAeWFob28uY29tIn0.JmBrt9I3xoBJGDf-zR2P8-psNVb0yJIqZCChCkXlp_EgR9To_KBSRtSfqde29DVtpK_YQitEV4jaRYTcGUTCTY_cdOeyWLbvkkejlyL2_yatO-QgyMuzyE-xOJ2BD4lBRWTHrHZ2xvkee057H5PGuSAWlGZBatnu-agKiE1wttpbCp0Dw7pTZpuxwi63q0mWqy2mF4J4fSvxh-xX1xLsXFVXxvmHeKJDt_77wFaWUpbl1s0qJypo3GskcwwziZxx6-2-trmVsGQ3_kzQLUtFpil9Mmb7fRNCwuWYmFD62P143axseajRJKGmS5syf6_YBcnC9aS_PYiTKIJhiE6stQ'
    ```
+   <br />
 
 ### Finding and edit credentials
 
