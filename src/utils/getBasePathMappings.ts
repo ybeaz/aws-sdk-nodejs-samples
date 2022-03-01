@@ -42,3 +42,8 @@ export const getBasePathMappings = async () => {
 
   return basePaths
 }
+
+/**
+ * @returns example:
+ * basePathMappings: false,
+ */

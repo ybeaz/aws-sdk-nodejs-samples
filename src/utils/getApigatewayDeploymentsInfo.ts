@@ -22,3 +22,8 @@ export const getApigatewayDeploymentsInfo: IGetApigatewayDeploymentsInfo =
     const deployments = await apigateway.getDeployments(params).promise()
     return deployments.items
   }
+
+/**
+ * @returns example:
+ * apigatewayDeploymentsInfo: [ { id: 'x7732x', createdDate: 2022-02-15T22:13:09.000Z } ]
+ */

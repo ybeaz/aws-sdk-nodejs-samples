@@ -24,3 +24,7 @@ export const getApigatewayGetStagesInfo: IGetApigatewayGetStagesInfo =
       console.info('cloudformation failure', error.message)
     }
   }
+
+/**
+ * @returns example:
+ */

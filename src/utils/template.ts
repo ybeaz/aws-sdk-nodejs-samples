@@ -15,3 +15,7 @@ interface ITemplate {
 export const template: ITemplate = async () => {
   return
 }
+
+/**
+ * @returns example:
+ */

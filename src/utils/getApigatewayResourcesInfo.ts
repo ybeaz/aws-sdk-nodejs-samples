@@ -23,3 +23,17 @@ export const getApigatewayResourcesInfo: IGetApigatewayResourcesInfo =
     const resources = await apigateway.getResources(params).promise()
     return resources.items
   }
+
+/**
+ * @returns example:
+ * apigatewayResourcesInfo: [
+    { id: '0f5lbi33jd', path: '/', resourceMethods: [Object] },
+    {
+      id: '6umo7g',
+      parentId: '0f5lbi33jd',
+      pathPart: 'api',
+      path: '/api',
+      resourceMethods: [Object]
+    }
+  ]
+ */
