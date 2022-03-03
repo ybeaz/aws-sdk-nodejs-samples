@@ -66,17 +66,6 @@ npx esbuild --bundle src/LoadBalancedFargateService.ts --outdir=dist --minify --
 
 <br />
 
-### Links to AWS console related sections
-
-- [AWS Cognito identity](https://console.aws.amazon.com/cognito)
-- [AWS S3 console](https://console.aws.amazon.com/s3/)
-- [AWS Lambda console](https://console.aws.amazon.com/lambda)
-- [AWS API Gateway](https://console.aws.amazon.com/apigateway)
-- [AWS VPC Experience](https://console.aws.amazon.com/vpc)
-- [AWS IAM console](https://console.aws.amazon.com/iamv2)
-
-<br />
-
 ### REST API authetication workflow
 
 1. Sing up, login at the [Cognito user pool](https://hello-world-test-001.auth.us-east-1.amazoncognito.com/login?client_id=5v44sg5kdo7ubgjmvaiep75a10&response_type=code&scope=email+openid&redirect_uri=https://hello-world-test-001.auth.us-east-1.amazoncognito.com/) and obtain code via GET request, see as a part of url
