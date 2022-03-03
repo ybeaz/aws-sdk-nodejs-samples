@@ -11,12 +11,12 @@
      - compile code `"buildCloudFormationCdk": "npx esbuild --bundle src/cloudFormation/project-01-nginx/WebserverDevNginx.ts -outdir=cdk.out --minify --sourcemap --platform=node"`, outDir: `cdk.out`,
      - add required metafiles: `"synthesizeStackCdk": "npx cdk synthesize"` to `cdk.out`,
      - upload resources lib to AWS CloudFormation service: `"bootstrapCdk": "npx cdk bootstrap"`,
-     - deply an instance from AWS resources to AWS server `"deployCdk": "npx cdk deploy"` from `resources lib`,
+     - deploy an instance from AWS resources to AWS server `"deployCdk": "npx cdk deploy"` from `resources lib`,
    - Get started another project
      - create a folder for new project in `src > cloudFormation`
-     - edit `src > cloudFormation > cdk.json`
-     - copy `src > cloudFormation > cdk.json` to the root
-     - run yarn yarn buildCdk
+     - edit `src` > `cloudFormation` > `projectName` > `cdk.json`
+     - copy `src` > `cloudFormation` > `projectName` > `cdk.json` to the root
+     - run `yarn buildCdk`
    - Control and test results in AWS: [https://console.aws.amazon.com/cloudformation/](https://console.aws.amazon.com/cloudformation/)
      - [Cloud formation console](https://console.aws.amazon.com/cloudformation/) > Particular service > Outputs > open links, example [link](http://webse-servi-1j3xejz1zho25-1770200024.us-east-1.elb.amazonaws.com/)
 
