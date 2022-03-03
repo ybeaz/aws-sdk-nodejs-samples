@@ -30,6 +30,7 @@ lerna-debug.log*
 
 # Security
 config.json
+cdk.json
 
 
 # Assets

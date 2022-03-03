@@ -1,0 +1,298 @@
+{
+  "version": "16.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "Webserver-dev.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "Webserver-dev.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "Webserver-dev": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://465969086547/us-east-1",
+      "properties": {
+        "templateFile": "Webserver-dev.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::465969086547:role/cdk-hnb659fds-deploy-role-465969086547-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::465969086547:role/cdk-hnb659fds-cfn-exec-role-465969086547-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-465969086547-us-east-1/8f2c11d5a5e86311e78a40b8c0a748981aaf1cd69d66e6c64e3e9cb4d66a0097.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "Webserver-dev.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::465969086547:role/cdk-hnb659fds-lookup-role-465969086547-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "Webserver-dev.assets"
+      ],
+      "metadata": {
+        "/Webserver-dev/Service/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLBE9A1ADBC"
+          }
+        ],
+        "/Webserver-dev/Service/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLBSecurityGroupF7435A5C"
+          }
+        ],
+        "/Webserver-dev/Service/LB/SecurityGroup/to WebserverdevServiceSecurityGroupF0358E66:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLBSecurityGrouptoWebserverdevServiceSecurityGroupF0358E66805CED8214"
+          }
+        ],
+        "/Webserver-dev/Service/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLBPublicListener46709EAA"
+          }
+        ],
+        "/Webserver-dev/Service/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLBPublicListenerECSGroup0CC8688C"
+          }
+        ],
+        "/Webserver-dev/Service/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceLoadBalancerDNSEC5B149E"
+          }
+        ],
+        "/Webserver-dev/Service/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceServiceURL250C0FB6"
+          }
+        ],
+        "/Webserver-dev/Service/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefTaskRole0CFE2F57"
+          }
+        ],
+        "/Webserver-dev/Service/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDef1922A00F"
+          }
+        ],
+        "/Webserver-dev/Service/TaskDef/web/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefwebLogGroup2A898F61"
+          }
+        ],
+        "/Webserver-dev/Service/TaskDef/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefExecutionRole919F7BE3"
+          }
+        ],
+        "/Webserver-dev/Service/TaskDef/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefExecutionRoleDefaultPolicy3073559D"
+          }
+        ],
+        "/Webserver-dev/Service/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Service9571FDD8"
+          }
+        ],
+        "/Webserver-dev/Service/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceSecurityGroupEEA09B68"
+          }
+        ],
+        "/Webserver-dev/Service/Service/SecurityGroup/from WebserverdevServiceLBSecurityGroup977124B2:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceSecurityGroupfromWebserverdevServiceLBSecurityGroup977124B2805C72DE82"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYN926A5246"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpc7788A521"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1Subnet3C273B99"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1RouteTableA1FD6ACC"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1RouteTableAssociation8B583A17"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1DefaultRouteFF4E2178"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1EIP8704DB2F"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1NATGateway5E3732C1"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2Subnet95FF715A"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2RouteTable263DEAA5"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2RouteTableAssociation43E5803C"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2DefaultRouteB1375520"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2EIPF0764873"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2NATGateway4C855E00"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet1Subnet075EFF4C"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet1RouteTable4F1D2E36"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet1RouteTableAssociation34B92275"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet1DefaultRouteA5ADF694"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet2SubnetE4CEDF73"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet2RouteTableDCE46591"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet2RouteTableAssociation111C622F"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet2DefaultRoute20CE2D89"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcIGW9C2C2B8F"
+          }
+        ],
+        "/Webserver-dev/EcsDefaultClusterMnL3mNNYN/Vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EcsDefaultClusterMnL3mNNYNVpcVPCGW2447264E"
+          }
+        ],
+        "/Webserver-dev/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/Webserver-dev/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/Webserver-dev/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "Webserver-dev"
+    }
+  }
+}
