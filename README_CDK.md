@@ -8,10 +8,10 @@
    - Available regions: `cdk.context.json`
    - settings: `cdk.json`
    - Command to deploy: `yarn buildCdk`, see commands orchestration in `package.json`
-     - `"buildCloudFormationCdk": "npx esbuild --bundle src/cloudFormation/project-01-nginx/WebserverDevNginx.ts -outdir=cdk.out --minify --sourcemap --platform=node"`: compile code to outDir: `cdk.out`,
-     - `"synthesizeStackCdk": "npx cdk synthesize"`: add to files in `cdk.out` meta files,
-     - `"bootstrapCdk": "npx cdk bootstrap"`: upload resources lib to AWS CloudFormation service,
-     - `"deployCdk": "npx cdk deploy"`: deply an instance of server from `resources lib`,
+     - compile code `"buildCloudFormationCdk": "npx esbuild --bundle src/cloudFormation/project-01-nginx/WebserverDevNginx.ts -outdir=cdk.out --minify --sourcemap --platform=node"`, outDir: `cdk.out`,
+     - add required metafiles: `"synthesizeStackCdk": "npx cdk synthesize"` to `cdk.out`,
+     - upload resources lib to AWS CloudFormation service: `"bootstrapCdk": "npx cdk bootstrap"`,
+     - deply an instance from AWS resources to AWS server `"deployCdk": "npx cdk deploy"` from `resources lib`,
    - Get started another project
      - create a folder for new project in `src > cloudFormation`
      - edit `src > cloudFormation > cdk.json`
