@@ -4,6 +4,7 @@
 - [Soft Development Kit (SDK) section](https://github.com/ybeaz/aws-node-samples/blob/main/README_SDK.md)
 
 <br />
+
 ### Links to AWS console related sections
 
 - [AWS Cognito identity](https://console.aws.amazon.com/cognito)

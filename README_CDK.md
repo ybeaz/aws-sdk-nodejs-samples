@@ -1,6 +1,6 @@
 # Cloud Development Kit (CDK)
 
-## CloudFormation
+## CloudFormation, S3 example
 
 1. Create and deply a service on AWS CloudFormation
    - DevOps authentication/ credentials storage: root `cdk.json`
@@ -31,6 +31,6 @@
 - Bootstaping in details - [Bootstrapping](https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html)
 - AWS::CloudFormation::CustomResource - [link](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html)
 - AWS CloudFront - [link](https://aws.amazon.com/cloudfront/)
-- How To Configure CloudFront Using CloudFormation Template - [link](https://hackernoon.com/how-to-configure-cloudfront-using-cloudformation-template-2c263u56)
+- Deploying your React App to AWS with S3, CloudFront - [link](https://www.xerris.com/insights/deploying-your-react-app-to-aws-in-20-minutes-with-s3-cloudfront-and-cloud-development-kit-cdk-and-circleci/)
 
 <br />
