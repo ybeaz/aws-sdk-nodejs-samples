@@ -30,6 +30,66 @@ export const getApigatewayExportInfo: IGetApigatewayExportInfo =
 
 /**
  * @returns example:
+ *   apigatewayExportInfo: {
+    contentType: 'application/octet-stream',
+    contentDisposition: 'attachment; filename="swagger_2022-02-15T22:13:09Z.json"',
+    body: '{\n' +
+      '  "swagger" : "2.0",\n' +
+      '  "info" : {\n' +
+      '    "description" : "API based on lambda with open and private pats",\n' +
+      '    "version" : "2022-02-15T22:13:09Z",\n' +
+      '    "title" : "api-lambda-open/private"\n' +
+      '  },\n' +
+      '  "host" : "tm7nlu04e7.execute-api.us-east-1.amazonaws.com",\n' +
+      '  "basePath" : "/prod",\n' +
+      '  "schemes" : [ "https" ],\n' +
+      '  "paths" : {\n' +
+      '    "/" : {\n' +
+      '      "get" : {\n' +
+      '        "produces" : [ "application/json" ],\n' +
+      '        "responses" : {\n' +
+      '          "200" : {\n' +
+      '            "description" : "200 response",\n' +
+      '            "schema" : {\n' +
+      '              "$ref" : "#/definitions/Empty"\n' +
+      '            }\n' +
+      '          }\n' +
+      '        }\n' +
+      '      }\n' +
+      '    },\n' +
+      '    "/api" : {\n' +
+      '      "get" : {\n' +
+      '        "produces" : [ "application/json" ],\n' +
+      '        "responses" : {\n' +
+      '          "200" : {\n' +
+      '            "description" : "200 response",\n' +
+      '            "schema" : {\n' +
+      '              "$ref" : "#/definitions/Empty"\n' +
+      '            }\n' +
+      '          }\n' +
+      '        },\n' +
+      '        "security" : [ {\n' +
+      '          "auth-lambda-test-002" : [ ]\n' +
+      '        } ]\n' +
+      '      }\n' +
+      '    }\n' +
+      '  },\n' +
+      '  "securityDefinitions" : {\n' +
+      '    "auth-lambda-test-002" : {\n' +
+      '      "type" : "apiKey",\n' +
+      '      "name" : "Authorization",\n' +
+      '      "in" : "header",\n' +
+      '      "x-amazon-apigateway-authtype" : "cognito_user_pools"\n' +
+      '    }\n' +
+      '  },\n' +
+      '  "definitions" : {\n' +
+      '    "Empty" : {\n' +
+      '      "type" : "object",\n' +
+      '      "title" : "Empty Schema"\n' +
+      '    }\n' +
+      '  }\n' +
+      '}'
+  }
  */
 
 // var params = {
