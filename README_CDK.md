@@ -3,7 +3,7 @@
 ## CloudFormation
 
 1. Create and deply a service on AWS CloudFormation
-   - DevOOps authentication/ credentials storage: root `cdk.json`
+   - DevOps authentication/ credentials storage: root `cdk.json`
    - Project forder structure: `src` > `cloudFormation` > `projectName` (example: project-01-nginx)
    - Available regions: `cdk.context.json`
    - settings: `cdk.json`
@@ -12,10 +12,12 @@
      - add required metafiles: `"synthesizeStackCdk": "npx cdk synthesize"` to `cdk.out`,
      - upload resources lib to AWS CloudFormation service: `"bootstrapCdk": "npx cdk bootstrap"`,
      - deploy an instance from AWS resources to AWS server `"deployCdk": "npx cdk deploy"` from `resources lib`,
-   - Get started another project
-     - create a folder for new project in `src > cloudFormation`
+   - Get started a new project
+     - create a folder for a new project in `src` > `cloudFormation` > `projectName`
      - edit `src` > `cloudFormation` > `projectName` > `cdk.json`
      - copy `src` > `cloudFormation` > `projectName` > `cdk.json` to the root
+     - change path to "main" file in script command `package.json` > `"scripts"` > `"buildCloudFormationCdk"`
+     - develop and debug "main" file and dependencies
      - run `yarn buildCdk`
    - Control and test results in AWS: [https://console.aws.amazon.com/cloudformation/](https://console.aws.amazon.com/cloudformation/)
      - [Cloud formation console](https://console.aws.amazon.com/cloudformation/) > Particular service > Outputs > open links, example [link](http://webse-servi-1j3xejz1zho25-1770200024.us-east-1.elb.amazonaws.com/)
