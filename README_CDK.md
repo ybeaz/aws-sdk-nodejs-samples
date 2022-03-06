@@ -26,7 +26,7 @@
 
 ## Links
 
-- [AWS CDK CLI commands and flags](AWS CDK Toolkit (cdk command))
+- [AWS CDK Toolkit (cdk command)](https://docs.aws.amazon.com/cdk/v2/guide/cli.html)
 - Example of environments implementations - [Deploying your CDK app to different stages and environments](https://taimos.de/blog/deploying-your-cdk-app-to-different-stages-and-environments)
 - Bootstaping in details - [Bootstrapping](https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html)
 - AWS::CloudFormation::CustomResource - [link](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html)
