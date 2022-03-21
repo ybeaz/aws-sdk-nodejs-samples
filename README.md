@@ -1,4 +1,4 @@
-# Soft Development Kit (SDK)
+# AWS Soft Development Kit (SDK)
 
 Dev materials and tested cases
 
