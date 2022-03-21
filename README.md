@@ -1,4 +1,6 @@
-# Soft Development Kit (SDK). Dev materials and tested cases
+# Soft Development Kit (SDK).
+
+Dev materials and tested cases
 
 &nbsp;
 
