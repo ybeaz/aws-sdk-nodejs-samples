@@ -1,6 +1,6 @@
-# AWS Soft Development Kit (SDK)
+# AWS SDK Typescript materials and cases
 
-Dev materials and tested cases
+Dev materials and tested cases. SDK - Soft Development Kit
 
 &nbsp;
 
